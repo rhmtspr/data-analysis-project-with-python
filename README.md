@@ -2,7 +2,7 @@
 
 ## Clone the this repository
 ```
-
+https://github.com/rhmtspr/data-analysis-project-with-python.git
 ```
 
 ## Setup Environment
