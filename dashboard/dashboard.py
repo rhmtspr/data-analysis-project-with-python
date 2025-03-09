@@ -23,8 +23,8 @@ def create_casual_user_df(days_df):
 
     return casual_df
 
-days_df = pd.read_csv("datasets/cleaned_day.csv")
-hours_df = pd.read_csv("datasets/cleaned_hour.csv")
+days_df = pd.read_csv("../data/cleaned_day.csv")
+hours_df = pd.read_csv("../data/cleaned_hour.csv")
 
 datetime_columns = ["dteday"]
 
@@ -45,7 +45,7 @@ min_date_hours = hours_df["dteday"].min()
 max_date_hours = hours_df["dteday"].max()
 
 with st.sidebar:
-    st.image("image.jpg")
+    st.image("../image.jpg")
 
     start_date, end_date = st.date_input(
         label="Range of Time",
