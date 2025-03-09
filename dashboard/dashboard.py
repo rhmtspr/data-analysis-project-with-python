@@ -45,7 +45,7 @@ min_date_hours = hours_df["dteday"].min()
 max_date_hours = hours_df["dteday"].max()
 
 with st.sidebar:
-    st.image("../image.jpg")
+    st.image("image.jpg")
 
     start_date, end_date = st.date_input(
         label="Range of Time",
