@@ -23,8 +23,8 @@ def create_casual_user_df(days_df):
 
     return casual_df
 
-days_df = pd.read_csv("../data/cleaned_day.csv")
-hours_df = pd.read_csv("../data/cleaned_hour.csv")
+days_df = pd.read_csv("cleaned_day.csv")
+hours_df = pd.read_csv("cleaned_hour.csv")
 
 datetime_columns = ["dteday"]
 
