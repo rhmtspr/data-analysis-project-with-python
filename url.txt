@@ -1,1 +1,1 @@
-https://my-data-analytics-final-project.streamlit.app/
+https://data-analysis-project-with-python-00284.streamlit.app/
