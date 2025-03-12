@@ -45,7 +45,7 @@ min_date_hours = hours_df["dteday"].min()
 max_date_hours = hours_df["dteday"].max()
 
 with st.sidebar:
-    st.image("image.jpg")
+    st.image("dashboard/image.jpg")
 
     start_date, end_date = st.date_input(
         label="Range of Time",
@@ -54,12 +54,11 @@ with st.sidebar:
         value=[min_date_days, max_date_days]
     )
 
-new_days_df = days_df[(days_df["dteday"] >= str(start_date)) & (days_df["dteday"] <= str(end_date))]
-new_hours_df = hours_df[(hours_df["dteday"] >= str(start_date)) & (hours_df["dteday"] <= str(end_date))]
+main_days_df = days_df[(days_df["dteday"] >= str(start_date)) & (days_df["dteday"] <= str(end_date))]
 
-rental_per_day_df = create_rental_per_day_df(new_days_df)
-registered_df = create_registered_user_df(new_days_df)
-casual_df = create_casual_user_df(new_days_df)
+rental_per_day_df = create_rental_per_day_df(main_days_df)
+registered_df = create_registered_user_df(main_days_df)
+casual_df = create_casual_user_df(main_days_df)
 
 print(casual_df)
 
